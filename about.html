@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About - Proint MLD</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+    <a href="#about-what-is" class="skip-to-content">Skip to content</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+                <img src="logo.png" alt="Proint MLD" height="40">
+                <span>Proint MLD</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.home">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html#hero" data-i18n="nav.home_hero"><i class="bi bi-house-fill me-2"></i>Hero</a></li>
+                            <li><a class="dropdown-item" href="index.html#about" data-i18n="nav.home_about"><i class="bi bi-info-circle-fill me-2"></i>About</a></li>
+                            <li><a class="dropdown-item" href="index.html#services" data-i18n="nav.home_services"><i class="bi bi-gear-fill me-2"></i>Services</a></li>
+                            <li><a class="dropdown-item" href="index.html#team" data-i18n="nav.home_team"><i class="bi bi-people-fill me-2"></i>Team</a></li>
+                            <li><a class="dropdown-item" href="index.html#contact" data-i18n="nav.home_contact"><i class="bi bi-envelope-fill me-2"></i>Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#about" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.about">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#about-what-is" data-i18n="nav.about_whatis"><i class="bi bi-question-circle-fill me-2"></i>What is 3x3?</a></li>
+                            <li><a class="dropdown-item" href="#about-story" data-i18n="nav.about_story"><i class="bi bi-book-fill me-2"></i>Our Story</a></li>
+                            <li><a class="dropdown-item" href="#about-why-team" data-i18n="nav.about_why"><i class="bi bi-trophy-fill me-2"></i>Why This Team</a></li>
+                            <li><a class="dropdown-item" href="#about-players" data-i18n="nav.about_players"><i class="bi bi-person-badge-fill me-2"></i>Players</a></li>
+                            <li><a class="dropdown-item" href="#blog-system" data-i18n="nav.about_blog"><i class="bi bi-journal-text me-2"></i>Blog</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item d-flex align-items-center ms-2">
+                        <button class="music-toggle" id="music-toggle" aria-label="Toggle music">
+                            <i class="bi bi-music-note-beamed"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item d-flex align-items-center ms-2">
+                        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+                            <span>RO</span>
+                        </button>
+                    </li>
+                    <li class="nav-item d-flex align-items-center ms-2">
+                        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                            <i class="bi bi-moon-fill"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <audio id="bg-music" src="song.mp3" preload="auto" loop></audio>
+
+    <section class="about-hero hero-section text-white d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-8">
+                    <span class="badge bg-primary mb-4 fs-6" data-i18n="about.hero.badge">Elite 3x3 Basketball</span>
+                    <h1 class="display-3 fw-bold mb-4 lh-1" data-i18n="about.hero.title">
+                        The Ultimate 3x3 Team
+                    </h1>
+                    <p class="lead mb-5 fs-5" data-i18n="about.hero.lead">
+                        Where NBA legends redefine street basketball dominance.
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#about-what-is" class="btn btn-primary btn-lg px-4 py-2" data-i18n="about.hero.btn_what">What is 3x3 Basketball?</a>
+                        <a href="#about-why-team" class="btn btn-outline-light btn-lg px-4 py-2" data-i18n="about.hero.btn_why">Why Us?</a>
+                        <a href="#about-players" class="btn btn-outline-light btn-lg px-4 py-2" data-i18n="about.hero.btn_players">Players</a>
+                        <a href="#about-story" class="btn btn-outline-light btn-lg px-4 py-2" data-i18n="about.hero.btn_story">Our Story</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="about-hero-card p-5 rounded-4 shadow-lg">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="about-hero-icon rounded-3 d-flex align-items-center justify-content-center">
+                                <i class="bi bi-trophy-fill fs-4"></i>
+                            </div>
+                            <div>
+                                <h3 class="h4 mb-2 about-hero-title" data-i18n="about.hero.card_title">Championship Ready</h3>
+                                <p class="mb-0 about-hero-subtitle" data-i18n="about.hero.card_desc">A team built for 3x3 supremacy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-what-is" class="about-what-is py-6 bg-light">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4" data-i18n="about.whatis.title">What is 3x3 Basketball?</h2>
+                    <p class="lead mb-4" data-i18n="about.whatis.lead">3x3 basketball is the fastest, most intense version of the game.</p>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-3"><i class="bi bi-lightning-fill text-warning me-3 fs-5"></i><strong data-i18n="about.whatis.fast_label">Fast-paced:</strong> <span data-i18n="about.whatis.fast_desc">Half-court action with non-stop scoring opportunities.</span></li>
+                        <li class="mb-3"><i class="bi bi-shield-fill text-danger me-3 fs-5"></i><strong data-i18n="about.whatis.phys_label">Physical:</strong> <span data-i18n="about.whatis.phys_desc">Intense defense and contact in a compact space.</span></li>
+                        <li class="mb-0"><i class="bi bi-star-fill text-success me-3 fs-5"></i><strong data-i18n="about.whatis.skill_label">High-skill:</strong> <span data-i18n="about.whatis.skill_desc">Pure basketball IQ, shooting, and one-on-one mastery.</span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-what-card bg-white p-4 rounded-4 shadow-sm">
+                        <h3 class="h5 fw-bold mb-3 text-primary" data-i18n="about.whatis.card_title">Key Differences</h3>
+                        <p class="mb-0" data-i18n="about.whatis.card_desc">More space means faster decisions. Tougher one-on-one battles. Every possession counts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-story" class="about-story py-6">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold mb-3" data-i18n="about.story.title">Our Story</h2>
+                <p class="lead text-white fs-5" data-i18n="about.story.lead">How we brought the greatest 3x3 team together.</p>
+            </div>
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <p class="text-white lead mb-4" data-i18n="about.story.p1">We believe in assembling the absolute best talent for street basketball domination. This team represents years of experience, unmatched skill, and a winning mentality.</p>
+                    <p class="text-white mb-4" data-i18n="about.story.p2">Each player was selected not just for their individual talent, but for how they elevate the team around them. Together, they form an unstoppable force in 3x3 basketball.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-what-card bg-white p-4 rounded-4 shadow-sm">
+                        <h3 class="h5 fw-bold mb-3 text-primary" data-i18n="about.story.card_title">Our Mission</h3>
+                        <p class="mb-0" data-i18n="about.story.card_desc">To demonstrate what's possible when the world's greatest 3x3 basketball players unite with a single purpose: to dominate the game.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-why-team" class="about-why-team py-6">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold mb-3" data-i18n="about.why.title">Why This Team Would Dominate</h2>
+                <p class="lead text-white fs-5" data-i18n="about.why.lead">The perfect combination of skill, strength, and basketball intelligence.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="about-why-card card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body p-4">
+                            <div class="about-why-icon mb-3">
+                                <i class="bi bi-bullseye text-white fs-1"></i>
+                            </div>
+                            <h5 class="card-title fw-bold" data-i18n="about.why.shoot_title">Unmatched Shooting</h5>
+                            <p class="card-text" data-i18n="about.why.shoot_desc">Stephen Curry's range stretches defenses to their limits.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="about-why-card card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body p-4">
+                            <div class="about-why-icon mb-3">
+                                <i class="bi bi-lightbulb-fill text-white fs-1"></i>
+                            </div>
+                            <h5 class="card-title fw-bold" data-i18n="about.why.iq_title">Superior IQ</h5>
+                            <p class="card-text" data-i18n="about.why.iq_desc">LeBron's vision and decision-making control the game.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="about-why-card card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body p-4">
+                            <div class="about-why-icon mb-3">
+                                <i class="bi bi-shield-check text-white fs-1"></i>
+                            </div>
+                            <h5 class="card-title fw-bold" data-i18n="about.why.wing_title">Alien Wingspan</h5>
+                            <p class="card-text" data-i18n="about.why.wing_desc">Wembanyama's length and shot-blocking redefine rim protection.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="about-why-card card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body p-4">
+                            <div class="about-why-icon mb-3">
+                                <i class="bi bi-arrow-repeat text-white fs-1"></i>
+                            </div>
+                            <h5 class="card-title fw-bold" data-i18n="about.why.sub_title">Elite Substitute</h5>
+                            <p class="card-text" data-i18n="about.why.sub_desc">Joel Embiid brings dominant scoring and physicality off the bench.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-players" class="about-players py-6 bg-light">
+        <div class="container">
+            <h2 class="text-center display-4 fw-bold mb-5" data-i18n="about.players.title">The Players</h2>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="about-player-card card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body p-4 d-flex flex-column align-items-center justify-content-center gap-3">
+                            <div class="about-player-avatar mb-0">
+                                <img class="about-player-photo rounded-circle" src="Steph.jpg" alt="Stephen Curry">
+                            </div>
+                            <h5 class="card-title fw-bold">Stephen Curry</h5>
+                            <p class="card-text text-muted mb-2" data-i18n="about.players.curry_role">Point Guard</p>
+                            <p class="card-text" data-i18n="about.players.curry_desc">Spacing and shooting wizard. Off-ball movement creates chaos for defenses.</p>
+                            <a href="#steph" class="btn btn-primary btn-sm mt-3" data-i18n="about.players.read_more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="about-player-card card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body p-4 d-flex flex-column align-items-center justify-content-center gap-3">
+                            <div class="about-player-avatar mb-0">
+                                <img class="about-player-photo rounded-circle" src="lbj.jpg" alt="LeBron James">
+                            </div>
+                            <h5 class="card-title fw-bold">LeBron James</h5>
+                            <p class="card-text text-muted mb-2" data-i18n="about.players.lebron_role">Small Forward</p>
+                            <p class="card-text" data-i18n="about.players.lebron_desc">Strength, IQ, and versatility. Makes smart plays and dominates one-on-one.</p>
+                            <a href="#lebron" class="btn btn-primary btn-sm mt-3" data-i18n="about.players.read_more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="about-player-card card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body p-4 d-flex flex-column align-items-center justify-content-center gap-3">
+                            <div class="about-player-avatar mb-0">
+                                <img class="about-player-photo rounded-circle" src="wemb.jpg" alt="Victor Wembanyama">
+                            </div>
+                            <h5 class="card-title fw-bold">Victor Wembanyama</h5>
+                            <p class="card-text text-muted mb-2" data-i18n="about.players.wemby_role">Center</p>
+                            <p class="card-text" data-i18n="about.players.wemby_desc">Generational talent with elite shot-blocking, shooting range, and otherworldly length.</p>
+                            <a href="#wemby" class="btn btn-primary btn-sm mt-3" data-i18n="about.players.read_more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="about-player-card card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body p-4 d-flex flex-column align-items-center justify-content-center gap-3">
+                            <div class="about-player-avatar mb-0">
+                                <img class="about-player-photo rounded-circle" src="joelll.jpg" alt="Joel Embiid">
+                            </div>
+                            <h5 class="card-title fw-bold">Joel Embiid</h5>
+                            <p class="card-text text-muted mb-2" data-i18n="about.players.embiid_role">Center (Sub)</p>
+                            <p class="card-text" data-i18n="about.players.embiid_desc">Interior scoring and rim protection. Physical presence intimidates opponents.</p>
+                            <a href="#joel" class="btn btn-primary btn-sm mt-3" data-i18n="about.players.read_more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-closing py-6 bg-secondary text-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold mb-4" data-i18n="about.closing.title">Legendary and Unbeatable</h2>
+                <p class="lead fs-4 mb-0" data-i18n="about.closing.desc">This team combines the greatest shooter, the smartest player, and the most versatile big man in basketball — with the most dominant center as a sub. In 3x3 basketball, they would be unstoppable.</p>
+            </div>
+
+            <div class="player-blog-section">
+                <h3 class="h2 fw-bold text-center mb-5" data-i18n="about.stories.title">Player Stories</h3>
+                <div class="row g-4">
+                    <div class="col-md-6 col-xl-3">
+                        <div id="steph" class="blog-card card h-100 border-0 shadow-sm">
+                            <img src="Steph.jpg" alt="Stephen Curry" class="card-img-top blog-card-img">
+                            <div class="card-body p-5 d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title fw-bold">Stephen Curry</h5>
+                                    <p class="card-subtitle text-light fw-italic mt-2 mb-3" data-i18n="about.stories.curry_sub">The Sharpshooter</p>
+                                    <p id="blog-text-steph" class="card-text" data-i18n="about.stories.curry_text">Stephen Curry brings unparalleled shooting range to the 3x3 court. His ability to create space and drain shots from anywhere on the court makes him virtually unguardable in street basketball. With range that extends well beyond the 3x3 arc, Curry's presence forces defenders to cover the entire court, creating open teammates and scoring opportunities.</p>
+                                </div>
+                                <a id="steph-btn" href="https://stephen-curry.net/history/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm align-self-end" style="margin-top: auto;" data-i18n="about.stories.learn_more">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-3">
+                        <div id="lebron" class="blog-card card h-100 border-0 shadow-sm">
+                            <img src="lbj.jpg" alt="LeBron James" class="card-img-top blog-card-img">
+                            <div class="card-body p-5 d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title fw-bold">LeBron James</h5>
+                                    <p class="card-subtitle text-light fw-italic mt-2 mb-3" data-i18n="about.stories.lebron_sub">The Playmaker</p>
+                                    <p id="blog-text-lebron" class="card-text" data-i18n="about.stories.lebron_text">LeBron's basketball intelligence and versatility are unmatched. His ability to read the game, make the right play, and dominate defensively all positions makes him the perfect quarterback for any 3x3 squad. His court vision and leadership transform the way a team operates, elevating every player around him while maintaining elite defensive intensity.</p>
+                                </div>
+                                <a id="lebron-btn" href="https://www.planetsport.com/basketball/feature/the-inspiring-story-of-lebron-james-from-high-school-to-nba-champion" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm align-self-end" style="margin-top: auto;" data-i18n="about.stories.learn_more">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-3">
+                        <div id="wemby" class="blog-card card h-100 border-0 shadow-sm">
+                            <img src="wemb.jpg" alt="Victor Wembanyama" class="card-img-top blog-card-img">
+                            <div class="card-body p-5 d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title fw-bold">Victor Wembanyama</h5>
+                                    <p class="card-subtitle text-light fw-italic mt-2 mb-3" data-i18n="about.stories.wemby_sub">The Alien</p>
+                                    <p id="blog-text-wemby" class="card-text" data-i18n="about.stories.wemby_text">Victor Wembanyama is a generational talent whose 8-foot wingspan and elite shooting ability make him a nightmare in 3x3 basketball. His shot-blocking, perimeter defense, and ability to score from anywhere on the court give this team an unprecedented advantage. Wemby's unique combination of size and skill changes the geometry of the game.</p>
+                                </div>
+                                <a id="wemby-btn" href="https://www.nba.com/player/1641705/victor-wembanyama" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm align-self-end" style="margin-top: auto;" data-i18n="about.stories.learn_more">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div id="joel" class="blog-card card h-100 border-0 shadow-sm">
+                            <img src="joelll.jpg" alt="Joel Embiid" class="card-img-top blog-card-img">
+                            <div class="card-body p-5 d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title fw-bold">Joel Embiid</h5>
+                                    <p class="card-subtitle text-light fw-italic mt-2 mb-3" data-i18n="about.stories.joel_sub">The Dominant Force (Sub)</p>
+                                    <p id="blog-text-joel" class="card-text" data-i18n="about.stories.joel_text">Joel Embiid's physical presence, scoring ability, and paint dominance make him unstoppable in 3x3 basketball. His combination of size, skill, and athleticism gives any team an elite interior presence. From low-post moves to face-up jumpers, Embiid controls the game and protects the rim with elite defense.</p>
+                                </div>
+                                <a id="joel-btn" href="https://www.theplayerstribune.com/articles/joel-embiid-its-story-time" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm align-self-end" style="margin-top: auto;" data-i18n="about.stories.learn_more">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- =============================================
+         BLOG SYSTEM SECTION
+         ============================================= -->
+    <section id="blog-system" class="blog-system-section">
+        <div class="container">
+            <!-- Section header -->
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold mb-3" data-i18n="about.blog.title">Community Blog</h2>
+                <p class="lead fs-5" data-i18n="about.blog.lead">Share your thoughts about 3x3 basketball. Create and read blog posts right here.</p>
+            </div>
+
+            <div class="row g-5">
+                <!-- Blog creation form -->
+                <div class="col-lg-5">
+                    <div class="blog-form-card">
+                        <h3 class="h4 fw-bold mb-1"><i class="bi bi-pencil-square me-2"></i><span data-i18n="about.blog.create_title">Create a Post</span></h3>
+                        <p class="text-muted mb-4" style="color: #94a3b8 !important; font-size: 0.9rem;" data-i18n="about.blog.create_desc">Write a new blog post. It will be saved in your browser.</p>
+
+                        <form id="blog-create-form" novalidate>
+                            <div class="mb-3">
+                                <label for="blog-title" class="form-label" data-i18n="about.blog.label_title">Title</label>
+                                <input id="blog-title" type="text" class="form-control" data-i18n-placeholder="about.blog.ph_title" placeholder="Enter blog title..." maxlength="120" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="blog-topic" class="form-label" data-i18n="about.blog.label_topic">Topic</label>
+                                <select id="blog-topic" class="form-select" required>
+                                    <option value="" disabled selected data-i18n="about.blog.topic_default">Choose who this post is about...</option>
+                                    <option value="Stephen Curry">Stephen Curry</option>
+                                    <option value="LeBron James">LeBron James</option>
+                                    <option value="Victor Wembanyama">Victor Wembanyama</option>
+                                    <option value="Joel Embiid">Joel Embiid</option>
+                                    <option value="The Team" data-i18n="about.blog.topic_team">The Whole Team</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="blog-content" class="form-label" data-i18n="about.blog.label_content">Content</label>
+                                <textarea id="blog-content" class="form-control" rows="6" data-i18n-placeholder="about.blog.ph_content" placeholder="Write your blog content here..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100 fw-semibold" data-i18n-html="about.blog.btn_publish">
+                                <i class="bi bi-plus-lg me-1"></i> Publish Post
+                            </button>
+
+                            <!-- Error / success messages -->
+                            <div id="blog-form-error" class="blog-form-error" role="alert"></div>
+                            <div id="blog-form-success" class="blog-form-success" role="status"></div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Blog list -->
+                <div class="col-lg-7">
+                    <h3 class="h4 fw-bold mb-4" style="color: #ffffff;"><i class="bi bi-journal-text me-2"></i><span data-i18n="about.blog.all_posts">All Posts</span> <span id="blog-count" class="badge bg-primary ms-2">0</span></h3>
+
+                    <!-- Search bar -->
+                    <div class="blog-search-wrapper mb-4">
+                        <i class="bi bi-search search-icon"></i>
+                        <input id="blog-search" type="text" class="form-control" data-i18n-placeholder="about.blog.ph_search" placeholder="Search posts by title...">
+                    </div>
+
+                    <!-- Blog cards container (rendered by JS) -->
+                    <div id="blog-list" class="user-blog-grid"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom confirm modal -->
+    <div id="custom-modal-overlay" class="custom-modal-overlay">
+        <div class="custom-modal">
+            <div class="custom-modal-icon">
+                <i class="bi bi-exclamation-triangle-fill"></i>
+            </div>
+            <h3 id="custom-modal-title" class="custom-modal-title">Are you sure?</h3>
+            <p id="custom-modal-text" class="custom-modal-text"></p>
+            <div class="custom-modal-actions">
+                <button id="custom-modal-cancel" class="custom-modal-btn custom-modal-btn-cancel">
+                    <i class="bi bi-x-lg me-1"></i><span data-i18n="modal.cancel">Cancel</span>
+                </button>
+                <button id="custom-modal-confirm" class="custom-modal-btn custom-modal-btn-confirm">
+                    <i class="bi bi-trash3 me-1"></i><span data-i18n="modal.delete">Delete</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-4 bg-secondary text-light">
+        <div class="container text-center">
+        <p class="mb-1" data-i18n="footer.copyright">&copy; 2026 Proint MLD. All rights reserved.</p>
+            <p class="mb-0" data-i18n="footer.desc">Professional Training & Web Development Consulting</p>
+        </div>
+    </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lang.js"></script>
+        <script src="script.js"></script>
+        <script src="blog.js"></script>
+    </body>
+    
+</html>
