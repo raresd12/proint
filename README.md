@@ -4,7 +4,7 @@ One-Page-Website (Scroll-Storytelling) für eine Präsentation im Deutschunterri
 Autor: Rares Duca, 18 Jahre. Alle Texte auf Deutsch, Niveau A2.
 
 - Statische Seite, kein Build-Schritt: `index.html` direkt öffnen (auch per `file://`, ohne Internet).
-- Bibliotheken liegen lokal in `vendor/` (GSAP 3.15 + ScrollTrigger, Lenis 1.3), Schriften in `fonts/`.
+- Bibliotheken liegen lokal in `vendor/` (GSAP 3.15 + ScrollTrigger, Lenis 1.3), Schriften in `fonts/fonts.css` (als data-URI eingebettet, ebenfalls offline).
 - Präsentationsmodus: Pfeiltasten, Leertaste, Bild ab/auf (Clicker) springen von Sektion zu Sektion; Pos1/Ende an den Anfang/ans Ende.
 
 ## Bilder holen
