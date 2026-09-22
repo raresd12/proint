@@ -57,7 +57,8 @@ window.REISE = {
       geschichte: 'Nach Berlin habe ich Natur gebraucht. Ich bin in die Sächsische Schweiz gefahren. Dort habe ich die Basteibrücke gesehen. Sie steht hoch über der Elbe zwischen großen Felsen. Ich bin früh morgens gewandert, weil es dann noch ruhig war. Der Nebel im Tal war wunderschön. Das war mein Lieblingstag in der Natur.',
       highlight: 'Der Blick von der Bastei auf die Elbe im Morgennebel.',
       fakt: 'Die Basteibrücke ist aus Sandstein. Man hat sie 1851 gebaut. Sie ist 76,5 Meter lang und hat sieben Bögen.',
-      bildtext: 'Die Brücke zwischen den Felsen'
+      bildtext: 'Die Brücke zwischen den Felsen',
+      bildRatio: '3 / 4', bildPos: 'center 30%'
     },
     {
       id: 'erfurt', nr: 7, stadt: 'Erfurt', ort: 'Krämerbrücke', land: 'DE', tage: [12],
