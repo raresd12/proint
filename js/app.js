@@ -46,7 +46,7 @@
           '<div class="polaroid-wrap">' +
             '<figure class="polaroid reveal' + (even ? ' polaroid--left' : '') + '">' +
               '<span class="pin" aria-hidden="true"></span>' +
-              '<div class="polaroid__img"><img loading="lazy" decoding="async" src="' + imgName(st, 'detail') + '" alt="' + esc(st.bildtext) + '"' + (st.bildPos ? ' style="object-position:' + esc(st.bildPos) + '"' : '') + '></div>' +
+              '<div class="polaroid__img"' + (st.bildRatio ? ' style="aspect-ratio:' + esc(st.bildRatio) + '"' : '') + '><img loading="lazy" decoding="async" src="' + imgName(st, 'detail') + '" alt="' + esc(st.bildtext) + '"' + (st.bildPos ? ' style="object-position:' + esc(st.bildPos) + '"' : '') + '></div>' +
               '<figcaption>' + esc(st.bildtext) + '</figcaption>' +
             '</figure>' +
           '</div>' +

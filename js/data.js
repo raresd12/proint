@@ -15,7 +15,8 @@ window.REISE = {
       geschichte: 'Meine Reise hat in Köln begonnen. Ich bin mit dem Zug angekommen und der Dom war direkt vor dem Bahnhof. Er ist riesig! Ich bin 533 Stufen auf den Turm gestiegen. Das war anstrengend, aber der Blick auf den Rhein war super. Am Abend habe ich am Rhein gesessen und ein Kölsch probiert.',
       highlight: 'Der Blick vom Südturm auf den Rhein und die Hohenzollernbrücke.',
       fakt: 'Der Kölner Dom ist 157 Meter hoch. Man hat ihn von 1248 bis 1880 gebaut – das sind 632 Jahre! Seit 1996 ist er UNESCO-Welterbe.',
-      bildtext: 'Der Dom am Rhein'
+      bildtext: 'Der Dom am Rhein',
+      bildRatio: '3 / 4', bildPos: 'center top'
     },
     {
       id: 'bremen', nr: 2, stadt: 'Bremen', ort: 'Bremer Stadtmusikanten', land: 'DE', tage: [3],
@@ -23,7 +24,8 @@ window.REISE = {
       geschichte: 'Am dritten Tag bin ich nach Bremen gefahren. Auf dem Marktplatz habe ich die Bremer Stadtmusikanten gesehen: den Esel, den Hund, die Katze und den Hahn. Ich habe die Beine vom Esel angefasst, weil das Glück bringt. Danach bin ich durch das Schnoorviertel gelaufen. Die Gassen dort sind sehr schmal und sehr alt.',
       highlight: 'Die Bronze-Figur vor dem Rathaus. Sie ist kleiner als auf den Fotos!',
       fakt: 'Die Figur ist aus Bronze. Der Künstler Gerhard Marcks hat sie gemacht. Seit 1953 steht sie neben dem Rathaus.',
-      bildtext: 'Esel, Hund, Katze, Hahn'
+      bildtext: 'Esel, Hund, Katze, Hahn',
+      bildRatio: '3 / 4', bildPos: 'center 40%'
     },
     {
       id: 'hamburg', nr: 3, stadt: 'Hamburg', ort: 'Elbphilharmonie', land: 'DE', tage: [4, 5],
