@@ -96,7 +96,8 @@ window.REISE = {
       geschichte: 'Bern ist die Hauptstadt der Schweiz. Die Altstadt ist sehr alt und schön. Ich bin unter den Lauben spaziert – das sind lange Arkaden. Um zwölf Uhr habe ich vor dem Zytglogge gewartet. Das ist ein Uhrturm mit kleinen Figuren. Ich habe mit einer Verkäuferin Deutsch gesprochen. Schweizerdeutsch war für mich schwer, aber sie war sehr nett.',
       highlight: 'Die Figuren am Zytglogge, wenn die Uhr schlägt.',
       fakt: 'Man hat den Zytglogge um 1220 gebaut. Die Uhr ist von 1530. Die Altstadt von Bern ist seit 1983 UNESCO-Welterbe.',
-      bildtext: 'Der Zytglogge um zwölf'
+      bildtext: 'Der Zytglogge um zwölf',
+      bildPos: 'center 42%'
     },
     {
       id: 'muenchen', nr: 12, stadt: 'München', ort: 'Lenbachhaus & Marienplatz', land: 'DE', tage: [18, 19],
