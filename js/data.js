@@ -71,7 +71,8 @@ window.REISE = {
       geschichte: 'Frankfurt war ganz anders. Hier gibt es viele Hochhäuser, deshalb nennt man die Stadt auch „Mainhattan“. Ich bin auf den Main Tower gefahren. Von oben sieht die Stadt aus wie eine Spielzeugstadt. Am Abend habe ich am Main gesessen. Die Skyline mit den Lichtern war sehr schön. Ich habe Apfelwein probiert.',
       highlight: 'Die Skyline bei Nacht vom Main-Ufer.',
       fakt: 'Der Commerzbank Tower ist 259 Meter hoch. Er ist das höchste Gebäude in Deutschland. Der Main Tower ist 200 Meter hoch und hat eine Aussichtsplattform.',
-      bildtext: 'Mainhattan bei Nacht'
+      bildtext: 'Mainhattan bei Nacht',
+      bildPos: 'center 20%'
     },
     {
       id: 'tuebingen', nr: 9, stadt: 'Tübingen', ort: 'Stocherkahnfahrt auf dem Neckar', land: 'DE', tage: [14],
